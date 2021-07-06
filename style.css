@@ -101,8 +101,6 @@ img {
     box-shadow: rgba(0, 0, 0, 0.5) 0 0 12px 4px;
 }
 
-/* #### */
-
 .card {
     display: grid;
     grid-template-columns: 50% 50%;
