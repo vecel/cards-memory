@@ -86,7 +86,6 @@ li:hover {
 }
 
 img {
-    margin: 2px;
     width: 100%;
     height: auto;
 }
@@ -104,6 +103,7 @@ img {
 .card {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: 1vh;
 }
 
 .horizontal_line {
