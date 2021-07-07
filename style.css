@@ -63,13 +63,13 @@ nav {
     flex-wrap: nowrap;
 }
 
-nav > ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+nav li {
     float: left;
     height: 100%;
     display: flex;
@@ -81,13 +81,17 @@ li a {
     margin: 14px;
 }
 
-li:hover {
+nav li:hover {
     background-color: #FFF;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+.material-icons {
+    user-select: none;
 }
 
 .container {
@@ -123,3 +127,34 @@ img {
 #memory_palaces, #memory_exercises {
     display: none;
 }
+
+.center_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_card_nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.green_nav_button {
+    background-color: var(--primary-color);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.bottom_card_nav li {
+    float: left;
+    margin: 4px;
+    border: 1px solid #707070;
+    background-color: #ffffff;
+}
+
+.smaller {
+    width: 16px;
+    height: 16px;
+}
+
