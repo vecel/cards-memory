@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Bridge Cards Memory</title>
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     </head>
     <body>
         <header>
@@ -19,8 +21,11 @@
 
         <main>
             <div class="container">
-                <div id="previous_card_nav" class="cards_navigation">
 
+                <div id="previous_card_nav" class="cards_navigation center_content">
+                    <div class="green_nav_button center_content">
+                        <span class="material-icons">navigate_before</span>
+                    </div>
                 </div>
                 
                 <section class="card_content">
@@ -30,12 +35,12 @@
                             <h2>O Metodzie</h2>
                             <div class="horizontal_line"></div>
                             <p>
-                                Metoda 'pałacu pamięci' to coś dla osób, które chcą wznieść swoje umiejętności zapamiętywania kart na wyższy poziom. Dzięki niej będziesz w stanie zapamiętać, które dokładnie karty poszły w danej lewie. Pierwszy raz tę technikę opisał Cycereon przedstawiając wydarzenie z życia greckiego liryka Symonidesa. Poeta był na uczcie, którą musiał opuścić przed jej zakończeniem, ponieważ został zawołany przez posłańca. Po tym jak wyszedł z budynku, ten zawalił się, a gruzy przygniotły pozostałych biesiadników. Wszyscy zginęli na miejscu. Ich obrażenia uniemożliwiały identyfikację zmarłych. Z pomocą przyszedł Symonides, który korzystając z mnemotechniki zapamiętał wcześniej gdzie siedzieli poszczególni goście. To pozwoliło zidentyfikować ciała. Sposób jest bardzo prosty. Cała magia zapamiętywania kart polega na przypisaniu im obrazów i wstawianiu ich do 'pokoi' pałacu pamięci. Obrazem może być naprawdę wszystko. Od mężczyzny w garniturze, przez Ferrari i gitarę, na przedłużaczu kończąc. Takie obrazy umieszczasz w dobrze znanych ci miejscach. Sekwencja pokoi ma duże znaczenie.
+                                Metoda pałacu pamięci to coś dla osób, które chcą wznieść swoje umiejętności zapamiętywania kart na wyższy poziom. Dzięki niej będziesz w stanie zapamiętać, które dokładnie karty poszły w danej lewie. Pierwszy raz tę technikę opisał Cycereon przedstawiając wydarzenie z życia greckiego liryka Symonidesa. Poeta był na uczcie, którą musiał opuścić przed jej zakończeniem, ponieważ został zawołany przez posłańca. Po tym jak wyszedł z budynku, ten zawalił się, a gruzy przygniotły pozostałych biesiadników. Wszyscy zginęli na miejscu. Ich obrażenia uniemożliwiały identyfikację zmarłych. Z pomocą przyszedł Symonides, który korzystając z mnemotechniki zapamiętał wcześniej gdzie siedzieli poszczególni goście. To pozwoliło zidentyfikować ciała. Sposób jest bardzo prosty. Cała magia zapamiętywania kart polega na przypisaniu im obrazów i wstawianiu ich do 'pokoi' pałacu pamięci. Obrazem może być naprawdę wszystko. Od mężczyzny w garniturze, przez Ferrari i gitarę, na przedłużaczu kończąc. Takie obrazy umieszczasz w dobrze znanych ci miejscach. Sekwencja pokoi ma duże znaczenie.
                             </p>
                         </article>
                         <div class="image_container">
                             
-                            <img src="img/memory-palace.jpg" alt="">
+                            <img src="img/memory-palace.jpg" alt="fantastic image of memory palace">
                             
                         </div>
                     </div>
@@ -70,26 +75,23 @@
 
                 </section>
                 
-                <div id="next_card_nav" class="cards_navigation">
-
+                <div id="next_card_nav" class="cards_navigation center_content">
+                    <div class="green_nav_button center_content">
+                        <span class="material-icons">navigate_next</span>
+                    </div>
                 </div>
 
                 <div class="bottom_card_nav">
-                    <!-- albo trzy buttony albo trzy svg z eventami przełączenia na daną kartę-->
+                    <ul class="center_content">
+                        <li class="green_nav_button bottom_nav_item smaller"></li>
+                        <li class="green_nav_button bottom_nav_item smaller"></li>
+                        <li class="green_nav_button bottom_nav_item smaller"></li>
+                    </ul>
                 </div>
             </div>
         </main>
-        <!-- 
-        <section>
-            
 
-            
-
-            
-
-        </section>
-        -->
     </body>
 
-    <script></script>
+    <script src="script.js"></script>
 </html>
