@@ -38,6 +38,7 @@ p {
     overflow: scroll;
     overflow-x: hidden;
     padding-right: 12px;
+    height: 100%;
 }
 
 a {
@@ -113,7 +114,6 @@ img {
 .horizontal_line {
     height: 1px;
     background-color: black;
-    
 }
 
 .image_container {
