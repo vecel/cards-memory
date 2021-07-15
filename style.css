@@ -185,8 +185,13 @@ img {
     align-items: center;
 }
 
-.drawer li span {
+.drawer li .material-icons-outlined {
     margin: 2px 10px 2px 8px;
+    cursor: pointer;
+}
+
+.drawer li .nav-item-label {
+    cursor: pointer;
 }
 
 .game-area {
