@@ -7,25 +7,55 @@
     </head>
     <body class="flex-row">
         <nav class="drawer">
-            <ul>
+            <ul class="main-drawer-list">
                 <li>
-                    <span class="material-icons-outlined">home</span>
-                    <a href="#">Powrót</a>
+                    <div class="drawer-item dark-on-hover">
+                        <span class="material-icons-outlined">home</span>
+                        <a href="index.html">Powrót</a>
+                    </div>
                 </li>
                 <li>
-                    <span class="material-icons-outlined">info</span>
-                    <a href="#">Jak To Działa?</a>
+                    <div class="drawer-item dark-on-hover">
+                        <span class="material-icons-outlined">info</span>
+                        <span class="nav-item-label">Jak To Działa?</span>
+                    </div>
                 </li>
-                <li>
-                    <span class="material-icons-outlined">settings</span>
-                    <a href="#">Ustawienia</a>
+                <li class="settings">
+                    <div id="settings" class="drawer-item dark-on-hover">
+                        <span class="material-icons-outlined">settings</span>
+                        <span class="nav-item-label">Ustawienia</span>
+                    </div>
+
+                    <ul class="settings-options hidden">
+                        <li class="settings-item dark-on-hover">There</li>
+                        <li class="settings-item dark-on-hover">Are</li>
+                        <li class="settings-item dark-on-hover">No</li>
+                        <li class="settings-item dark-on-hover">Settings</li>
+                        <li class="settings-item dark-on-hover">Yet</li>
+                    </ul>
+
                 </li>
             </ul>
         </nav>
+
         <div class="game-area">
             <div class="game-container">
+                <div class="progress-container">
 
+                </div>
+                <div class="timer">
+
+                </div>
+                <div class="game">
+
+                </div>
+                <div class="bottom-buttons-container">
+                    <button class="start-game">Start</button>
+                    <button class="stop-game outlined-button">Przerwij</button>
+                    <button class="next">Dalej</button>
+                </div>
             </div>
         </div>
     </body>
+    <script src="memory-game-script.js"></script>
 </html>
