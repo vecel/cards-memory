@@ -251,7 +251,7 @@ img {
 }
 
 .progress-container {
-    display: flex; /* before game starts display: none*/
+    display: none;
     flex-direction: column;
     justify-content: left;
     align-items: flex-start;
@@ -306,7 +306,7 @@ img {
 }
 
 button.start-game {
-    display: inline;
+    display: block;
 }
 
 button.stop-game {

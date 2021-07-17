@@ -1,6 +1,7 @@
 const settings = document.querySelector('li #settings');
 const settingsList = document.querySelector('ul.settings-options');
 
+const progressContainer = document.querySelector('.progress-container');
 const progressBar = document.querySelector('.progress-bar');
 const progressInfo = document.querySelector('.progress-info');
 
@@ -41,6 +42,7 @@ let round = 0;
 
 
 function startGame() {
+    progressContainer.style.display = 'flex';
     setUpButtons();
 }
 
