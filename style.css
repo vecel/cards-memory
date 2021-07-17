@@ -61,7 +61,7 @@ button {
     background-color: var(--primary-color);
     color: white;
     font-size: 18px;
-    min-width: 8vw;
+    min-width: 11vw;
 }
 
 article a {
