@@ -251,7 +251,37 @@ img {
 }
 
 .progress-container {
-    background-color: aliceblue;
+    display: flex; /* before game starts display: none*/
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.progress-info {
+    width: fit-content;
+    flex-grow: 1;
+    margin: 10px 0 6px 10px;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #707077;
+}
+
+.progress-bar-container {
+    background-color: #cecdcd;
+    width: 95%;
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    width: 0%;
+    height: 100%;
+    border-radius: 4px 0 0 4px;
 }
 
 .timer {
@@ -259,7 +289,6 @@ img {
 }
 
 .game {
-    background-color: violet;
     grid-column: 1 / 3;
 }
 

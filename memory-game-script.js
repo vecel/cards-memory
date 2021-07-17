@@ -1,6 +1,9 @@
 const settings = document.querySelector('li #settings');
 const settingsList = document.querySelector('ul.settings-options');
 
+const progressBar = document.querySelector('.progress-bar');
+const progressInfo = document.querySelector('.progress-info');
+
 const startButton = document.querySelector('button.start-game');
 const stopButton = document.querySelector('button.stop-game');
 const nextButton = document.querySelector('button.next');
@@ -28,8 +31,12 @@ stopButton.addEventListener('click', () => {
 
 nextButton.addEventListener('click', () => {
     console.log('next');
+    round++;
+    updateProgress();
 })
 
+
+let round = 0;
 
 
 
@@ -49,4 +56,23 @@ function setDisplayNone(element) {
 
 function setDisplayBlock(element) {
     element.style.display = 'block';
+}
+
+function updateProgress() {
+    updateProgressInfo();
+    updateProgressBar();
+}
+
+function updateProgressInfo() {
+    if (round > 13) return;
+    progressInfo.textContent = `${round} / 13`;
+}
+
+function updateProgressBar() {
+    const progressValue = parseInt(round * 100 / 13);
+    if (progressValue > 100) return;
+    if (progressValue === 100) {
+        progressBar.style.borderRadius = '4px';
+    }
+    progressBar.style.width = `${progressValue}%`;
 }
